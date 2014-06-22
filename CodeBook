@@ -1,0 +1,78 @@
+DATA DICTIONARY - CodeBookUCI-HARDataset
+
+All values averages of the respective fields
+
+tBodyAcc.mean...X	Time Domain Signal-Mean Body Acceleration- X Axis				17	
+tBodyAcc.mean...Y	Time Domain Signal-Mean Body Acceleration- Y Axis				17	
+tBodyAcc.mean...Z	Time Domain Signal-Mean Body Acceleration- Z Axis				17	
+tBodyAcc.std...X	Time Domain Signal-Standard Deviation  Body Acceleration- X Axis		17	
+tBodyAcc.std...Y	Time Domain Signal-Standard Deviation  Body Acceleration- Y Axis		17	
+tBodyAcc.std...Z	Time Domain Signal-Standard Deviation  Body Acceleration- Z Axis		17	
+tGravityAcc.mean...X	Time Domain Signal-Mean Gravity Acceleration- X Axis				17	
+tGravityAcc.mean...Y	Time Domain Signal-Mean Gravity Acceleration- Y Axis				17	
+tGravityAcc.mean...Z	Time Domain Signal-Mean Gravity Acceleration- Z Axis				17	
+tGravityAcc.std...X	Time Domain Signal-Standard Deviation Gravity Acceleration- X Axis		17	
+tGravityAcc.std...Y	Time Domain Signal-Standard Deviation Gravity Acceleration- Y Axis		17	
+tGravityAcc.std...Z	Time Domain Signal-Standard Deviation Gravity Acceleration- Z Axis		17	
+tBodyAccJerk.mean...X	Time Domain Signal-Mean Body Jerk Acceleration- X Axis				17	
+tBodyAccJerk.mean...Y	Time Domain Signal-Mean Body Jerk Acceleration- Y Axis				17	
+tBodyAccJerk.mean...Z	Time Domain Signal-Mean Body Jerk Acceleration- Z Axis				17	
+tBodyAccJerk.std...X	Time Domain Signal-Standard Deviation Body Jerk Acceleration- X Axis		17	
+tBodyAccJerk.std...Y	Time Domain Signal-Standard Deviation Body Jerk Acceleration- Y Axis		17	
+tBodyAccJerk.std...Z	Time Domain Signal-Standard Deviation Body Jerk Acceleration- Z Axis		17	
+tBodyGyro.mean...X	Time Domain Signal-Mean Angular Velocity- X Axis				17	
+tBodyGyro.mean...Y	Time Domain Signal-Mean Angular Velocity- Y Axis				17	
+tBodyGyro.mean...Z	Time Domain Signal-Mean Angular Velocity- Z Axis				17	
+tBodyGyro.std...X	Time Domain Signal-Standard Deviation Angular Velocity- X Axis			17	
+tBodyGyro.std...Y	Time Domain Signal-Standard Deviation Angular Velocity- Y Axis			17	
+tBodyGyro.std...Z	Time Domain Signal-Standard Deviation Angular Velocity- Z Axis			17	
+tBodyGyroJerk.mean...X	Time Domain Signal-Mean Body Jerk Angular Velocity- X Axis			17	
+tBodyGyroJerk.mean...Y	Time Domain Signal-Mean Body Jerk Angular Velocity- Y Axis			17	
+tBodyGyroJerk.mean...Z	Time Domain Signal-Mean Body Jerk Angular Velocity- Z Axis			17	
+tBodyGyroJerk.std...X	Time Domain Signal-Standard Deviation Body Jerk Angular Velocity- X Axis	17	
+tBodyGyroJerk.std...Y	Time Domain Signal-Standard Deviation Body Jerk Angular Velocity- Y Axis	17	
+tBodyGyroJerk.std...Z	Time Domain Signal-Standard Deviation Body Jerk Angular Velocity- Z Axis	17	
+tBodyAccMag.mean..	Time Domain Signal-Mean Body Acceleration Magnitude				17	
+tBodyAccMag.std..	Time Domain Signal-Standard Deviation Body Acceleration Magnitude		17	
+tGravityAccMag.mean..	Time Domain Signal-Mean Angular Velocity Magnitude				17	
+tGravityAccMag.std..	Time Domain Signal-Mean Angular Velocity Magnitude				17	
+tBodyAccJerkMag.mean..	Time Domain Signal-Mean Body Jerk Acceleration Magnitude			17	
+tBodyAccJerkMag.std..	Time Domain Signal-Standard Deviation Body Jerk Acceleration Magnitude		17	
+tBodyGyroMag.mean..	Time Domain Signal-Mean Body Angular Velocity Magnitude				17	
+tBodyGyroMag.std..	Time Domain Signal-Standard Deviation Body Angular Velocity Magnitude		17	
+tBodyGyroJerkMag.mean..	Time Domain Signal-Mean Body Jerk Angular Velocity Magnitude			17	
+tBodyGyroJerkMag.std..	Time Domain Signal-Standard Deviation Body Jerk Angular Velocity		17	
+fBodyAcc.mean...X	Frequency Domain Signal-Mean Body Acceleration- X Axis				17	
+fBodyAcc.mean...Y	Frequency Domain Signal-Mean Body Acceleration- Y Axis				17	
+fBodyAcc.mean...Z	Frequency Domain Signal-Mean Body Acceleration- Z Axis				17	
+fBodyAcc.std...X	Frequency Domain Signal-Standard Deviation  Body Acceleration- X Axis		17	
+fBodyAcc.std...Y	Frequency Domain Signal-Standard Deviation  Body Acceleration- Y Axis		17	
+fBodyAcc.std...Z	Frequency Domain Signal-Standard Deviation  Body Acceleration- Z Axis		17	
+fBodyAccJerk.mean...X	Frequency Domain Signal-Mean Body Jerk Acceleration- X Axis			17	
+fBodyAccJerk.mean...Y	Frequency Domain Signal-Mean Body Jerk Acceleration- Y Axis			17	
+fBodyAccJerk.mean...Z	Frequency Domain Signal-Mean Body Jerk Acceleration- Z Axis			17	
+fBodyAccJerk.std...X	Frequency Domain Signal-Standard Deviation Body Jerk Acceleration- X Axis	17	
+fBodyAccJerk.std...Y	Frequency Domain Signal-Standard Deviation Body Jerk Acceleration- Y Axis	17	
+fBodyAccJerk.std...Z	Frequency Domain Signal-Standard Deviation Body Jerk Acceleration- Z Axis	17	
+fBodyGyro.mean...X	Frequency Domain Signal-Mean Angular Velocity- X Axis				17	
+fBodyGyro.mean...Y	Frequency Domain Signal-Mean Angular Velocity- Y Axis				17	
+fBodyGyro.mean...Z	Frequency Domain Signal-Mean Angular Velocity- Z Axis				17	
+fBodyGyro.std...X	Frequency Domain Signal-Standard Deviation Angular Velocity- X Axis		17	
+fBodyGyro.std...Y	Frequency Domain Signal-Standard Deviation Angular Velocity- Y Axis		17	
+fBodyGyro.std...Z	Frequency Domain Signal-Standard Deviation Angular Velocity- Z Axis		17	
+fBodyAccMag.mean..	Frequency Domain Signal-Mean Body Acceleration Magnitude			17	
+fBodyAccMag.std..	Frequency Domain Signal-Standard Deviation Body Acceleration Magnitude		17	
+fBodyBodyAccJerkMag.mean..	Frequency Domain Signal-Mean Body Jerk Acceleration Magnitude		17	
+fBodyBodyAccJerkMag.std..	Frequency Domain Signal-Standard Deviation Body Jerk Acceleration Magnitude	17	
+fBodyBodyGyroMag.mean..	Frequency Domain Signal-Mean Body Angular Velocity Magnitude			17	
+fBodyBodyGyroMag.std..	Frequency Domain Signal-Standard Deviation Body Angular Velocity Magnitude	17	
+fBodyBodyGyroJerkMag.mean..	Frequency Domain Signal-Mean Body Jerk Angular Velocity Magnitude	17	
+fBodyBodyGyroJerkMag.std..	Frequency Domain Signal-Standard Deviation Body Jerk Angular Velocity	17	
+Subject	Subject Number		
+Activity	Activity Name										18	
+														WALKING
+														WALKING_UPSTAIRS
+														WALKING_DOWNSTAIRS
+														SITTING
+														STANDING
+														LAYING
