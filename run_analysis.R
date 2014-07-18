@@ -2,10 +2,10 @@
 require(plyr)
 
 # Read all files
-activity_labels <- read.table("activity_labels.txt", as.is=TRUE)
+activity_labels <- read.table("activity_labels.txt", col.names=c("ACTIVITY_ID","ACTIVITY_NAME"))
 
-activity_num_train <- read.table("train/y_train.txt", as.is=TRUE)
-activity_num_test  <- read.table("test/y_test.txt", as.is=TRUE)
+activity_num_train <- read.table("train/y_train.txt", col.names="ACTIVITY_ID")
+activity_num_test  <- read.table("test/y_test.txt", col.names="ACTIVITY_ID")
 
 Xtrain <- read.table("train/X_train.txt",as.is=TRUE)
 Xtest  <- read.table("test/X_test.txt", as.is=TRUE)
@@ -28,8 +28,17 @@ XColNames <- gsub("[-(),]", ".", features[,2])
 # activity names given in activity_labels
 # activity_train and activity_test will contain activity names
 # like WLAKING, SITTING, STNDING, etc
-activity_train <- merge(activity_labels, activity_num_train)[,2]
-activity_test  <- merge(activity_labels, activity_num_test)[,2]
+# merge sorts!!! Replace with join
+# activity_train <- merge(activity_labels, activity_num_train, sort=FALSE)
+# activity_train <- activity_train[,2]
+# activity_test  <- merge(activity_labels, activity_num_test, sort=FALSE)
+# activity_test <- activity_test[,2]
+
+activity_train <- join(x=activity_num_train, y=activity_labels)
+activity_train <- activity_train$ACTIVITY_NAME
+
+activity_test  <- join(x=activity_num_test, y=activity_labels)
+activity_test <- activity_test$ACTIVITY_NAME
 
 # Add activity names and subject cols to train and test data
 Xtrain <- cbind(Xtrain, XSubjectTrain, activity_train)
@@ -61,13 +70,12 @@ XClean <- X[,c(1:6, 41:46, 81:86, 121:126, 161:166, 201, 202, 214,
 
 # Step 5 - Create a second independent set ....
 # We could use X (with all cols) or XClean. Since it is not clear which data set to use,
-# I am using XClean - the cocenpt is the same
+# I am using XClean - the concept is the same
 
-# Also dropping variables which has no values (.drop = FALSE is the default for ddply)
 XCleanAvg <- ddply(XClean, .(Subject, Activity), colwise(mean))
-Coursera does not like csv files!
-#write.csv(XCleanAvg, file="XCleanAvg.csv", row.names=FALSE)
-write.table(XCleanAvg, file="XCleanAvg.txt", row.names=FALSE)
+
+write.csv(XCleanAvg, file="XCleanAvg.csv", row.names=FALSE)
+#write.table(XCleanAvg, file="XCleanAvg.txt", row.names=FALSE)
 
 
 
